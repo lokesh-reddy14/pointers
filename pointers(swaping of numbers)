@@ -1,0 +1,17 @@
+//*write a c-program for swaping of two numbers*//
+
+#include<stdio.h>
+int main()
+{
+	int a,b,temp,*p,*q;
+	printf("enter a:");
+	scanf("%d",&a);
+	printf("enter b:");
+	scanf("%d",&b);
+	p=&a;
+	q=&b;
+	temp=*p;
+	*p=*q;
+	*q=temp;
+	printf("swaping of numbers is %d\n%d\n",a,b);
+}
