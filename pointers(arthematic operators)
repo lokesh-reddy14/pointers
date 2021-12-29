@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,*p,*q,addition,subraction,multiplication,modulous;
+	printf("enter a:");
+	scanf("%d",&a);
+	printf("enter b:");
+	scanf("%d",&b);
+	p=&a;
+	q=&b;
+	addition=*p+*q;
+	subraction=*p-*q;
+	multiplication=*p**q;
+	modulous=*p%*q;
+	printf("addition is %d\n",addition);
+	printf("subraction is %d\n",subraction);
+	printf("multiplication is %d\n",multiplication);
+	printf("division is %d\n",division);
+	printf("modulous is %d\n",modulous);
+}
